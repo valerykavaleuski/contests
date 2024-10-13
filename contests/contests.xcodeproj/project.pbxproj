@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04665A2A2CBC1E570074ADD1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04665A292CBC1E570074ADD1 /* main.swift */; };
+		04665A372CBC28220074ADD1 /* Aircondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04665A362CBC28220074ADD1 /* Aircondition.swift */; };
+		04665A492CBC2B270074ADD1 /* Aircondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04665A362CBC28220074ADD1 /* Aircondition.swift */; };
+		04665A532CBC2D080074ADD1 /* contestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04665A432CBC2ACB0074ADD1 /* contestsTests.swift */; };
+		04665A562CBC2D3F0074ADD1 /* AirconditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04665A552CBC2D3F0074ADD1 /* AirconditionTests.swift */; };
+		048D0D002CBC2F3F006A833C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D0CFF2CBC2F3F006A833C /* main.swift */; };
+		048D0D012CBC2F50006A833C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D0CFF2CBC2F3F006A833C /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,11 +29,24 @@
 
 /* Begin PBXFileReference section */
 		04665A262CBC1E570074ADD1 /* contests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = contests; sourceTree = BUILT_PRODUCTS_DIR; };
-		04665A292CBC1E570074ADD1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		04665A312CBC27EB0074ADD1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		04665A362CBC28220074ADD1 /* Aircondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aircondition.swift; sourceTree = "<group>"; };
+		04665A412CBC2ACB0074ADD1 /* contestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = contestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04665A432CBC2ACB0074ADD1 /* contestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contestsTests.swift; sourceTree = "<group>"; };
+		04665A482CBC2AF70074ADD1 /* contests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = contests.xctestplan; path = ../contests.xctestplan; sourceTree = "<group>"; };
+		04665A552CBC2D3F0074ADD1 /* AirconditionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirconditionTests.swift; sourceTree = "<group>"; };
+		048D0CFF2CBC2F3F006A833C /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		04665A232CBC1E570074ADD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04665A3E2CBC2ACB0074ADD1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,8 +59,11 @@
 		04665A1D2CBC1E570074ADD1 = {
 			isa = PBXGroup;
 			children = (
+				04665A482CBC2AF70074ADD1 /* contests.xctestplan */,
 				04665A282CBC1E570074ADD1 /* contests */,
+				04665A422CBC2ACB0074ADD1 /* contestsTests */,
 				04665A272CBC1E570074ADD1 /* Products */,
+				04665A302CBC27EA0074ADD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				04665A262CBC1E570074ADD1 /* contests */,
+				04665A412CBC2ACB0074ADD1 /* contestsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +79,43 @@
 		04665A282CBC1E570074ADD1 /* contests */ = {
 			isa = PBXGroup;
 			children = (
-				04665A292CBC1E570074ADD1 /* main.swift */,
+				048D0CFF2CBC2F3F006A833C /* main.swift */,
+				04665A352CBC28160074ADD1 /* 2021_lesson1 */,
 			);
 			path = contests;
+			sourceTree = "<group>";
+		};
+		04665A302CBC27EA0074ADD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04665A312CBC27EB0074ADD1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04665A352CBC28160074ADD1 /* 2021_lesson1 */ = {
+			isa = PBXGroup;
+			children = (
+				04665A362CBC28220074ADD1 /* Aircondition.swift */,
+			);
+			path = 2021_lesson1;
+			sourceTree = "<group>";
+		};
+		04665A422CBC2ACB0074ADD1 /* contestsTests */ = {
+			isa = PBXGroup;
+			children = (
+				04665A542CBC2D300074ADD1 /* 2021_lesson1 */,
+				04665A432CBC2ACB0074ADD1 /* contestsTests.swift */,
+			);
+			path = contestsTests;
+			sourceTree = "<group>";
+		};
+		04665A542CBC2D300074ADD1 /* 2021_lesson1 */ = {
+			isa = PBXGroup;
+			children = (
+				04665A552CBC2D3F0074ADD1 /* AirconditionTests.swift */,
+			);
+			path = 2021_lesson1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +138,23 @@
 			productReference = 04665A262CBC1E570074ADD1 /* contests */;
 			productType = "com.apple.product-type.tool";
 		};
+		04665A402CBC2ACB0074ADD1 /* contestsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04665A452CBC2ACB0074ADD1 /* Build configuration list for PBXNativeTarget "contestsTests" */;
+			buildPhases = (
+				04665A3D2CBC2ACB0074ADD1 /* Sources */,
+				04665A3E2CBC2ACB0074ADD1 /* Frameworks */,
+				04665A3F2CBC2ACB0074ADD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = contestsTests;
+			productName = contestsTests;
+			productReference = 04665A412CBC2ACB0074ADD1 /* contestsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +166,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					04665A252CBC1E570074ADD1 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					04665A402CBC2ACB0074ADD1 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -111,16 +187,39 @@
 			projectRoot = "";
 			targets = (
 				04665A252CBC1E570074ADD1 /* contests */,
+				04665A402CBC2ACB0074ADD1 /* contestsTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04665A3F2CBC2ACB0074ADD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04665A222CBC1E570074ADD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04665A2A2CBC1E570074ADD1 /* main.swift in Sources */,
+				04665A372CBC28220074ADD1 /* Aircondition.swift in Sources */,
+				048D0D002CBC2F3F006A833C /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04665A3D2CBC2ACB0074ADD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04665A562CBC2D3F0074ADD1 /* AirconditionTests.swift in Sources */,
+				04665A532CBC2D080074ADD1 /* contestsTests.swift in Sources */,
+				048D0D012CBC2F50006A833C /* main.swift in Sources */,
+				04665A492CBC2B270074ADD1 /* Aircondition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +366,36 @@
 			};
 			name = Release;
 		};
+		04665A462CBC2ACB0074ADD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2UV3UVQ6CK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = valery.kavaleuski.bc7d4182e33caa7e.contestsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		04665A472CBC2ACB0074ADD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2UV3UVQ6CK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = valery.kavaleuski.bc7d4182e33caa7e.contestsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -284,6 +413,15 @@
 			buildConfigurations = (
 				04665A2E2CBC1E570074ADD1 /* Debug */,
 				04665A2F2CBC1E570074ADD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04665A452CBC2ACB0074ADD1 /* Build configuration list for PBXNativeTarget "contestsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04665A462CBC2ACB0074ADD1 /* Debug */,
+				04665A472CBC2ACB0074ADD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

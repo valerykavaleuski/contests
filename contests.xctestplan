@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "C7E384B4-C142-4E08-94C1-EB51EEB0B044",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:contests.xcodeproj",
+        "identifier" : "04665A402CBC2ACB0074ADD1",
+        "name" : "contestsTests"
+      }
+    }
+  ],
+  "version" : 1
+}
