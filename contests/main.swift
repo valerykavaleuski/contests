@@ -4,4 +4,4 @@ class Solution {
     
 }
 
-Solution().airconditionSolution()
+Solution().stepikEuclidGreatestCommonDivisorSolution()
