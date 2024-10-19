@@ -14,12 +14,6 @@
 
 extension Solution {
     
-    func stepikFibonacciSolution() {
-        let input = Int(readLine() ?? "") ?? 0
-
-        print(fibonacci(index: input))
-    }
-    
     @_optimize(speed)
     func fibonacci(index: Int) -> Int {
         guard index >= 2 else {
@@ -35,5 +29,11 @@ extension Solution {
         }
         
         return array[index]
+    }
+    
+    func stepikFibonacciSolution() {
+        let input = Int(readLine() ?? "") ?? 0
+        let result = fibonacci(index: input)
+        print(result)
     }
 }

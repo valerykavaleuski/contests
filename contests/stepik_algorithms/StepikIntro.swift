@@ -14,16 +14,17 @@
 
 extension Solution {
     
+    @_optimize(speed)
+    func stepikIntroSum(_ num1: Int, _ num2: Int) -> Int {
+        num1 + num2
+    }
+    
     func stepikIntroSolution() {
         let input = readLine(strippingNewline: true)!
-            .split { $0 == " " }
+            .split(separator: " ")
             .compactMap { Int($0) }
             
         let result = stepikIntroSum(input[0], input[1])
         print(result)
-    }
-    
-    func stepikIntroSum(_ num1: Int, _ num2: Int) -> Int {
-        num1 + num2
     }
 }

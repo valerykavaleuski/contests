@@ -15,12 +15,6 @@
 
 extension Solution {
     
-    func stepikFibonacciLastNumberSolution() {
-        let input = Int(readLine() ?? "") ?? 0
-
-        print(fibonacciLastNumber(index: input))
-    }
-    
     @_optimize(speed)
     func fibonacciLastNumber(index: Int) -> Int {
         guard index >= 2 else {
@@ -36,5 +30,11 @@ extension Solution {
         }
         
         return array[index]
+    }
+    
+    func stepikFibonacciLastNumberSolution() {
+        let input = Int(readLine() ?? "") ?? 0
+        let result = fibonacciLastNumber(index: input)
+        print(result)
     }
 }

@@ -4,4 +4,4 @@ class Solution {
     
 }
 
-Solution().stepikEuclidGreatestCommonDivisorSolution()
+Solution().variousComponentsSolution()

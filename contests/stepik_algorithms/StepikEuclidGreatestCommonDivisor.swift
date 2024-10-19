@@ -14,14 +14,6 @@
 
 extension Solution {
     
-    func stepikEuclidGreatestCommonDivisorSolution() {
-        let input = readLine()!.split(separator: " ").compactMap { Int($0) }
-        let a = input[0]
-        let b = input[1]
-
-        print(euclidGreatestCommonDivisorSolution(a: a, b: b))
-    }
-    
     @_optimize(speed)
     func euclidGreatestCommonDivisorSolution(a: Int, b: Int) -> Int {
         guard a >= 0 else {
@@ -51,5 +43,13 @@ extension Solution {
         }
         
         return mutableA
+    }
+    
+    func stepikEuclidGreatestCommonDivisorSolution() {
+        let input = readLine()!.split(separator: " ").compactMap { Int($0) }
+        let a = input[0]
+        let b = input[1]
+        let result = euclidGreatestCommonDivisorSolution(a: a, b: b)
+        print(result)
     }
 }
