@@ -4,4 +4,4 @@ class Solution {
     
 }
 
-Solution().variousComponentsSolution()
+Solution().countSortSolution()

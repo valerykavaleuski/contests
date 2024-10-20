@@ -14,6 +14,8 @@
 */
 
 extension Solution {
+    
+    @_optimize(speed)
     func binarySearch(arr1: [Int], arr2: [Int]) -> [Int] {
         var result = arr2
         
